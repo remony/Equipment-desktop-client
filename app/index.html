@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <title>Karite</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <!-- Electron Javascript -->
+    <!--<script src="app.js" charset="utf-8"></script> -->
+  </head>
+
+  <body>
+    <!-- Wrap your entire app inside .window -->
+    <div class="window">
+      <!-- .toolbar-header sits at the top of your app -->
+      <header class="toolbar toolbar-header">
+        <h1 class="title">Karite</h1>
+      </header>
+
+      <!-- Your app's content goes inside .window-content -->
+      <div class="window-content">
+        <div ng-view></div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- build:remove -->
+<!-- Connect to server process -->
+<script>require('electron-connect').client.create()</script>
+<!-- end:build -->
+<script src="http://localhost:35729/livereload.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="views/view1/view1.js"></script>
+  <script src="views/view2/view2.js"></script>
+
+
+  <!-- Deps -->
+  <script src="bower_components/bootstrap/dist/"
+</html>
